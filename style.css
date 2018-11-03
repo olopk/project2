@@ -46,11 +46,11 @@ html{
     transition-timing-function: ease-in-out;
     transition-duration: 0.7s;
 }
-.navbar__item a:focus{
+.navbar__item a:focus, .navbar__item a:hover{
     background-color: transparent !important;
     border-top: 4px solid #ff6033 !important;
 }   
-.navbar__item a:hover{
+{
     background-color: transparent !important;
     border-top: 4px solid #ff6033;
 }
@@ -135,4 +135,76 @@ html{
 font-family: Raleway-Bold, sans-serif;
 font-size: 90px;
 margin-top: 50px;
+}
+.services{
+    background-color: #70bfff;
+}
+.header__sm{
+    display: none;
+}
+.services-content{
+    margin: 179px 0px 151px 0px;
+    height: 460px; 
+}
+.services-content__element{
+    background-color: #ffffff;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 15px;
+    -webkit-box-shadow: -1px 4px 15px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: -1px 4px 15px 0px rgba(0,0,0,0.61);
+    box-shadow: -1px 4px 15px 0px rgba(0,0,0,0.61);
+}
+.services-content__element--name{
+   width: 65%;
+   margin-bottom: 0;
+   font-family: Raleway-Bold;
+   font-size: 1.25rem;
+}
+.services-content__element--divider{
+    border: 1px solid #9d9d9d;
+    height: 100%;
+}
+.services-content__element--img{
+  width: 50px;
+  height: 50px;  
+}
+.services__aside{
+    background-image: url('img/tomato.png');
+    height: 520px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+.services__aside > h1{
+    font-size: 4.2rem;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery{
+    background-color: #ffe92f;
+}
+.gallery__header{
+    text-align: center;
+    font-family: Raleway-Bold;
+    font-size: 4.2rem;
+}
+.gallery__text{
+    width: 50%;
+    text-align: center;
+    margin: 29px auto;
+    font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	font-weight: 300;
+}
+.gallery__item{
+    padding: 10px;
+}
+.gallery__item img{
+    width: 100%;
 }
