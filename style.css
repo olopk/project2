@@ -9,6 +9,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 html{
     font-family: 'Raleway', sans-serif;
@@ -77,6 +78,7 @@ html{
     font-size: 17px;
 }
 .defbutton{
+    display: inline-block;
     text-align: center;
     text-transform: uppercase;
     color: #fff;
@@ -85,6 +87,9 @@ html{
     font-size: 1.2rem;
     font-family: 'Raleway', sans-serif;
     box-shadow: 2px 6px 15px -5px rgba(0,0,0,0.75);
+    width: 20%;
+    font-family: Raleway;
+    font-weight: 500;
 }
 .defbutton:hover{
     color: black;
@@ -115,12 +120,12 @@ html{
     height: 100%;
 }
 .section-wrapper{
-    padding: 20px 15%;
+    padding: 20px 11%;
 }
 .about{
     background-color: #00b6b6;
     background-image: url(img/raspberry.png);
-    background-size: contain;
+    background-size: 50%;
     background-repeat: no-repeat;
     background-position: 10%;
 }
@@ -128,13 +133,16 @@ html{
     height: 600px;
     margin-top: 50px; 
 }
-.about__content--header, .standard-text--light{
+.about__content > .defheader{
+    margin-top: 50px;
+}
+.defheader{
+    font-family: Raleway-Bold, sans-serif;
+    font-size: 5rem;
     color: #ffffff;
 }
-.about__content--header{
-font-family: Raleway-Bold, sans-serif;
-font-size: 90px;
-margin-top: 50px;
+.standard-text--light{
+    color: #ffffff;
 }
 .services{
     background-color: #70bfff;
@@ -175,24 +183,19 @@ margin-top: 50px;
 }
 .services__aside{
     background-image: url('img/tomato.png');
+    background-repeat: no-repeat;
     height: 520px;
     margin-top: 100px;
     display: flex;
     align-items: center;
 }
-.services__aside > h1{
-    font-size: 4.2rem;
-    color: #fff;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .gallery{
     background-color: #ffe92f;
 }
 .gallery__header{
     text-align: center;
-    font-family: Raleway-Bold;
-    font-size: 4.2rem;
+    color: black;
 }
 .gallery__text{
     width: 50%;
@@ -251,8 +254,18 @@ margin-top: 50px;
 }
 .blog{
     height: 864px;
-    background-color: #b07cf7;  
+    background-color: #b07cf7;
+    padding-top: 70px;  
 }
+.blog__header{
+    text-align: center;
+}
+.blog__text{
+    text-align: center;
+    width: 50%;
+    margin: 29px auto;
+}
+
 .blog__post{
     background-size: cover;
 	height: 310px;
@@ -261,7 +274,8 @@ margin-top: 50px;
 	margin-left: 15px;
 	margin-right: 15px;
 	margin-bottom: 50px;
-	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 .blog__post--1{
     background-image: url(img/blog1.png);    
@@ -294,5 +308,24 @@ margin-top: 50px;
 .blog__post--caption{
     margin-top: 70px;
     height: 150px;
+    padding: 20px 15px 0px 15px;
     background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(255, 255, 255, 0));
+    
+}
+.blog__post--text{
+    color: #fff;
+    font-family: Raleway-Bold;
+    font-size: 1.25rem;
+    margin-top: 25px;
+}
+.blog__post--author{
+    color: rgba(255,255,255,0.5);
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8rem;
+}
+.blogbtn{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f72b3b;
 }
