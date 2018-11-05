@@ -376,6 +376,10 @@ html{
     text-align: center;
     height: 90px;
     color: #b9b9b9;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 .footer_p1{}
 .footer_p2{
