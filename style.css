@@ -115,7 +115,7 @@ html{
     height: 100%;
 }
 .section-wrapper{
-    padding: 20px 10%;
+    padding: 20px 15%;
 }
 .about{
     background-color: #00b6b6;
@@ -254,11 +254,45 @@ margin-top: 50px;
     background-color: #b07cf7;  
 }
 .blog__post{
-    height: 310px;
-    border: 1px solid black;
+    background-size: cover;
+	height: 310px;
+	padding: 0px;
+	padding-top: 30px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 50px;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.5);
 }
 .blog__post--1{
-    background-image: url(img/blog1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(img/blog1.png);    
+}
+.blog__post--2{
+    background-image: url(img/blog2.png);    
+}
+.blog__post--3{
+    background-image: url(img/blog3.png);    
+}
+.blog__post--date{
+    margin: 0px 0px 0px 30px;
+    background-color: rgba(0,0,0,0.3);
+    width: 60px;
+    height: 60px;
+    border-radius: 3px;
+    padding: 4px;
+}
+.blog__post--day, .blog__post--month{
+    color: #fff;
+    font-family: Raleway-Bold;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0px;
+    line-height: 25px;
+}
+.blog__post--month{
+    font-size: 1.3rem;
+}
+.blog__post--caption{
+    margin-top: 70px;
+    height: 150px;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.9), rgba(255, 255, 255, 0));
 }
