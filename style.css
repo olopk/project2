@@ -142,7 +142,7 @@ html{
     color: #ffffff;
 }
 .standard-text--light{
-    color: #ffffff;
+    color: rgba(255,255,255,0.7);
 }
 .services{
     background-color: #70bfff;
@@ -193,7 +193,7 @@ html{
 .gallery{
     background-color: #ffe92f;
 }
-.gallery__header{
+.defheader--black{
     text-align: center;
     color: black;
 }
@@ -329,3 +329,57 @@ html{
     margin-left: auto;
     background-color: #f72b3b;
 }
+.contact{
+    background-image: url(img/footerbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 70px; 
+}
+.contact__text{
+    width: 50%;
+    text-align: center;
+    margin: 29px auto 59px auto;
+    font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	font-weight: 300;
+}
+.contact__input, .contact__textarea{
+    width: 100%;
+    background-color: #77dbdc;
+    border: none;
+    margin-bottom: 12px;
+    color: #fff;
+    padding: 15px;
+}
+.contact__input{
+    height: 40px;
+}
+.contact__textarea{
+    resize: none;
+}
+.contact__input:focus, .contact__textarea:focus{
+    border-left: 3px solid #355b82;
+    background-color: #00c4c4;
+}
+.contact__bold{
+    font-size: 1.1rem;
+    font-family: Raleway-Bold;
+    line-height: 0.7;
+}
+.contact__normal{
+    font-size: 1.2rem;
+    font-family: Raleway;
+    margin-bottom: 20px;
+}
+.footer{
+    background-color: black;
+    text-align: center;
+    height: 90px;
+    color: #b9b9b9;   
+}
+.footer_p1{}
+.footer_p2{
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+.footer_p3{}
