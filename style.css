@@ -32,6 +32,27 @@ html{
     margin: 0px;
     background-color: #fff;
 }
+.navbar__bar-menu{
+    float: right;
+    display: none;
+}
+.bar3, .bar1, .bar2{
+    width: 40px;
+    margin: 6px;
+    border-radius: 5px;
+    border: 3px solid black;
+    transition: all 1s;
+}
+ .navbar__bar-menu:hover .bar1{
+    opacity: 0;
+  } 
+  .navbar__bar-menu:hover .bar2{
+    transform: rotate(45deg);
+  }
+  .navbar__bar-menu:hover .bar3{
+    transform: rotate(-45deg) translate(6px, -10px); 
+  }
+
 .navbar__container{
     padding: 0;
 }
@@ -395,3 +416,12 @@ li.active a, .navbar__item a:hover{
     font-size: 25px;
 }
 .footer_p3{}
+
+@media only screen and (max-width: 800px){
+    #navbar{
+        display: none;
+    }
+    .navbar__bar-menu{
+        display: block;
+    }
+}
