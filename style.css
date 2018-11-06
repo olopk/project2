@@ -25,6 +25,12 @@ html{
 .navbar__wrapper{
     padding: 35px 10% 0 10%;
     margin: 0px;
+    transition: all 1s;
+}
+.navbar__wrapper__scrolled{
+    padding: 15px 10% 0 10%;
+    margin: 0px;
+    background-color: #fff;
 }
 .navbar__container{
     padding: 0;
@@ -47,7 +53,7 @@ html{
     transition-timing-function: ease-in-out;
     transition-duration: 0.7s;
 }
-.navbar__item a:focus, .navbar__item a:hover{
+li.active a, .navbar__item a:hover{
     background-color: transparent !important;
     border-top: 4px solid #ff6033 !important;
 }   
@@ -128,6 +134,7 @@ html{
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: 10%;
+    padding-bottom: 30px;
 }
 .about__content{
     height: 600px;
@@ -151,7 +158,7 @@ html{
     display: none;
 }
 .services-content{
-    margin: 179px 0px 151px 0px;
+    margin: 139px 0px 131px 0px;
     height: 460px; 
 }
 .services-content__element{
@@ -350,6 +357,7 @@ html{
     margin-bottom: 12px;
     color: #fff;
     padding: 15px;
+    transition: background-color 2.5s;
 }
 .contact__input{
     height: 40px;
