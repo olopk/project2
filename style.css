@@ -33,7 +33,6 @@ html{
     background-color: #fff;
 }
 .navbar__bar-menu{
-    float: right;
     display: none;
 }
 .bar3, .bar1, .bar2{
@@ -177,6 +176,7 @@ li.active a, .navbar__item a:hover{
 }
 .header__sm{
     display: none;
+
 }
 .services-content{
     margin: 139px 0px 131px 0px;
@@ -212,6 +212,7 @@ li.active a, .navbar__item a:hover{
 .services__aside{
     background-image: url('img/tomato.png');
     background-repeat: no-repeat;
+    background-size: contain;
     height: 520px;
     margin-top: 100px;
     display: flex;
@@ -248,7 +249,8 @@ li.active a, .navbar__item a:hover{
 .subscribe{
     height: 500px;
     background-image: url(img/blueberries.png);
-    background-size: cover;
+    background-position:right center;
+    background-repeat: no-repeat;
 
 }
 .subscribe > h1{
@@ -256,8 +258,8 @@ li.active a, .navbar__item a:hover{
     font-size: 2.5rem;
     margin-top:120px;
 }
-.subscribe > p{
-    width: 500px;
+.subscribe p{
+    width: 40%;
     font-family: Raleway;
     font-weight: 300;
 }
@@ -414,7 +416,7 @@ li.active a, .navbar__item a:hover{
 .footer_p2{
     font-family: 'Pacifico', cursive;
     font-size: 25px;
-}
+    }
 .footer_p3{}
 
 @media only screen and (max-width: 800px){
@@ -423,5 +425,26 @@ li.active a, .navbar__item a:hover{
     }
     .navbar__bar-menu{
         display: block;
+        padding-top:5px;
+        float: right;
     }
-}
+    .about{
+        background-position: left bottom;
+        background-size: 70%;
+    }
+    .defheader{
+        text-align: center;
+    }
+    .standard-text--light{
+        background-color: rgba(0,0,0,0.3);
+        width: 60%;
+        margin-top: 7%;
+        margin-left: 40%;
+    }
+    .header__sm{
+        display:block;
+    }
+    .services__aside{
+        display: none;
+    }
+}   
