@@ -19,6 +19,7 @@
                         <div class="bar2"></div>
                         <div class="bar3"></div>
                 </div>
+                <div class="after"></div>
                 <ul class="nav navbar-nav navbar-right" id="navbar">
                     <li class="navbar__item active"><a href="#home">HOME</a></li>
                     <li class="navbar__item"><a href="#about">ABOUT</a></li>
@@ -44,7 +45,7 @@
         <div class="row">
             <div class="col-md-5 col-md-offset-7 about__content">
                 <h1 class="defheader">About Us</h1>
-                <p class="standard-text standard-text--light">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+                <p class="standard-text standard-text--light about__text">Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
                     Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.</p>
             </div>
         </div>
@@ -144,13 +145,13 @@
         <h1 class="defheader defheader--black">Contact</h1>
         <p class="contact__text">For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
         <div class="row">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-10 col-sm-offset-1">
                 <input type="text" class="contact__input" placeholder="Your name.." type="text">
                 <input type="email" class="contact__input" placeholder="Your email.." type="text">
                 <input type="tel" class="contact__input" placeholder="Your phone number.." type="text">
                 <textarea class="contact__textarea" name="message" id="message" rows="8" placeholder="Your message"></textarea>
             </div>
-            <div class="col-md-5 col-md-offset-1 col-sm-12">
+            <div class="col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-3 contact__small">
                 <p class="contact__bold">ADDRESS</p>
                 <p class="contact__normal">123 City name, Street, City, Country</p>
                 <p class="contact__bold">EMAIL</p>
@@ -200,6 +201,24 @@ $(document).ready(function(){
             $('nav').removeClass('navbar__wrapper__scrolled');
         };
     });
+
+    $('.navbar__bar-menu').on('click', function(){
+        $(this).toggleClass('navbar__bar-menu-clicked');
+        
+        const scrolled =  $('html, body').scrollTop();
+        
+        if (scrolled $('nav').css('background-color') != 'white'){
+            $('nav').css('background-color', 'white');
+        };
+        
+        $('#navbar').stop().slideToggle(300);
+    });
+
+    $('#navbar').click(function(){
+        $('.navbar__bar-menu').removeClass('navbar__bar-menu-clicked');
+        $(this).slideUp();
+    });
+
 });
 
 </script>

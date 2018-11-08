@@ -34,6 +34,7 @@ html{
 }
 .navbar__bar-menu{
     display: none;
+    cursor: pointer;
 }
 .bar3, .bar1, .bar2{
     width: 40px;
@@ -42,13 +43,13 @@ html{
     border: 3px solid black;
     transition: all 1s;
 }
- .navbar__bar-menu:hover .bar1{
+ .navbar__bar-menu-clicked .bar1{
     opacity: 0;
   } 
-  .navbar__bar-menu:hover .bar2{
+  .navbar__bar-menu-clicked .bar2{
     transform: rotate(45deg);
   }
-  .navbar__bar-menu:hover .bar3{
+  .navbar__bar-menu-clicked .bar3{
     transform: rotate(-45deg) translate(6px, -10px); 
   }
 
@@ -77,10 +78,6 @@ li.active a, .navbar__item a:hover{
     background-color: transparent !important;
     border-top: 4px solid #ff6033 !important;
 }   
-{
-    background-color: transparent !important;
-    border-top: 4px solid #ff6033;
-}
 .main-article {
 	min-height: 50vh;
 	margin-top: 50px;
@@ -412,17 +409,21 @@ li.active a, .navbar__item a:hover{
     align-items: center;
     justify-content: space-between;
 }
-.footer_p1{}
 .footer_p2{
     font-family: 'Pacifico', cursive;
     font-size: 25px;
     }
-.footer_p3{}
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 803px){
     #navbar{
-        display: none;
+        display:none;
     }
+
+    #navbar ul li{
+        display: block;
+        width: 100%;
+    }
+
     .navbar__bar-menu{
         display: block;
         padding-top:5px;
@@ -435,7 +436,7 @@ li.active a, .navbar__item a:hover{
     .defheader{
         text-align: center;
     }
-    .standard-text--light{
+    .about__text{
         background-color: rgba(0,0,0,0.3);
         width: 60%;
         margin-top: 7%;
@@ -447,4 +448,28 @@ li.active a, .navbar__item a:hover{
     .services__aside{
         display: none;
     }
+    .gallery__text{
+        width: 90%;
+    }
+    .subscribe h1, .subscribe .standard-text{
+        width: 60%;
+        background-color: rgba(255,255,255,0.5);
+    }
+    .subscribe input{
+        width: 36%;        
+    }
+    .blog{
+        height: auto;
+        padding-top: 25px;  
+    }    
+    .contact__small{
+        padding-top: 15px;
+        background-color: rgba(255,255,255,0.2);
+    }
+    .after{
+        clear: both;
+    }
+    li.active a, .navbar__item a:hover{
+        border-top: 4px solid transparent !important;
+    }   
 }   
