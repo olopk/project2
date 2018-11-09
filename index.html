@@ -207,18 +207,17 @@ $(document).ready(function(){
         
         const scrolled =  $('html, body').scrollTop();
         
-        if (scrolled $('nav').css('background-color') != 'white'){
-            $('nav').css('background-color', 'white');
+        if ($('nav').css('background-color') != 'white'){
+            $('nav').toggleClass('small_nav_bg_change');
         };
         
         $('#navbar').stop().slideToggle(300);
     });
 
-    $('#navbar').click(function(){
-        $('.navbar__bar-menu').removeClass('navbar__bar-menu-clicked');
-        $(this).slideUp();
-    });
-
+        $('#navbar').click(function(){
+            $('.navbar__bar-menu').removeClass('navbar__bar-menu-clicked');
+            $(this).slideUp();
+        });
 });
 
 </script>

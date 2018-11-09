@@ -36,6 +36,9 @@ html{
     display: none;
     cursor: pointer;
 }
+.small_nav_bg_change{
+background-color: white;
+}
 .bar3, .bar1, .bar2{
     width: 40px;
     margin: 6px;
@@ -413,8 +416,14 @@ li.active a, .navbar__item a:hover{
     font-family: 'Pacifico', cursive;
     font-size: 25px;
     }
+ @media screen and (min-width: 992px) {
+        .navbar-nav {display: block !important;}
+        }
+    
 
-@media only screen and (max-width: 803px){
+
+
+@media only screen and (max-width: 813px){
     #navbar{
         display:none;
     }
@@ -444,6 +453,12 @@ li.active a, .navbar__item a:hover{
     }
     .header__sm{
         display:block;
+    }
+    .services-content{
+        background-image: url('img/tomato.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .services__aside{
         display: none;
