@@ -487,4 +487,30 @@ li.active a, .navbar__item a:hover{
     li.active a, .navbar__item a:hover{
         border-top: 4px solid transparent !important;
     }   
-}   
+}
+@media only screen and (max-width: 776px){
+    .about__text{
+        width: auto;
+        margin-left:0px;
+    }
+    .services-content{
+        margin-top: 30px;
+    }
+    .defheader{
+        margin-top: 40px;
+    }
+    .gallery__btn, .blogbtn{
+        width: 50%;
+    }
+    .subscribe h1, .subscribe p.standard-text, .blog__text,.contact__text{
+        width: auto;
+    }
+    .subscribe__input, .subscribe__btn{
+        width: 100% !important;
+    }
+    .contact__small{
+        width: 91%;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+}
